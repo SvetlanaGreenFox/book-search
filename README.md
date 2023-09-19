@@ -5,5 +5,5 @@ ____________
 __________
 **Использованные технологиий**
 + React
-+ React-bootstrap
++ React Bootstrap
 + React Router
