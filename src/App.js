@@ -13,10 +13,6 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/books" element={<BooksListsPage />} />
-          {/* <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/project/:id" element={<ProjectPage />}/>
-          <Route path="/contacts" element={<Contacts />} /> */}
         </Routes>
         {/* <Footer /> */}
       </Router>
