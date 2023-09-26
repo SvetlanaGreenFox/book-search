@@ -3,8 +3,6 @@ import SearchForm from "../../components/SearchForm/SearchForm";
 
 import Container from 'react-bootstrap/Container';
 
-//container for start page and components
-
 //add sorting elements
 
 const MainPage = () => {

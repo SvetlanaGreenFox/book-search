@@ -24,10 +24,21 @@ const SearchForm = () => {
         }
     }
 
+    // const options = {
+    //     method: 'GET',
+    //     url: 'https://www.googleapis.com/books/v1',
+    //     headers: {
+
+    //     }
+
+    // }
+
+    //AIzaSyDY4BE8M-sYvDkCcl5hOSjNHqNIMwjEnAo
+    console.log(process.env.REACT_APP_MY_VARIABLE);
     useEffect(() => {
         if (bookName.length > 0) {
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookName}&key=AIzaSyDY4BE8M-sYvDkCcl5hOSjNHqNIMwjEnAo`)
-                .then((res) => setList(res.data.items))
+            axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookName}&key=${process.env.REACT_APP_MY_VARIABLE}`)
+                .then((res) => console.log(res.data.items))
                 .catch((err) => console.log(err));
                 redirect("/books");
             
